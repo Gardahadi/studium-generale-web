@@ -1,0 +1,288 @@
+td#span a {
+    color: #fff;
+}
+
+button#span a {
+    color: #fff;
+}
+
+/**** Login ****/
+
+.caption {
+    background:rgba(0, 0, 0, 0.701961);
+    bottom:0;
+    color:#999999;
+    font-size:14px;
+    font-weight:300;
+    left:0;
+    min-width:200px;
+    padding:20px 10px 20px 50px;
+    position:absolute;
+    right:0;
+    z-index:20;
+}
+
+.caption .logo img {
+    width: 10%;
+    float: left;
+    margin: 10px 20px 10px 0;
+}
+
+.login {
+    background: #fff;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+}
+
+.login-header {
+    margin: 0 40px 20px 40px;
+    padding: 60px 15px;
+    height: 150px;
+    background:#367fa9;
+    color: #fff;
+    border-bottom: 5px solid #ccc;
+}
+
+.login-header h2 {
+    font-size: 45px;
+    margin-top: -52px;
+    position: relative;
+    margin-left: 100%;
+    right: 50px;
+    color: #ccc;
+}
+
+.msg p {
+    margin: 0;
+}
+
+.alert.alert-danger {
+    border-radius: 0;
+    margin: 1px 0;
+    padding: 1px;
+}
+
+.login-content {
+    margin: 0 40px;
+}
+
+.login-content form {
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .caption .logo {
+            display: none;
+        }
+    }
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+    .login {
+        padding: 0 30px;
+    }
+
+    .login-header {
+        margin: 0 20px 30px 20px;
+    }
+
+    .login-content {
+        margin: 0 20px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .caption {
+        padding-top: 2px;
+    }
+
+    .caption .title {
+        margin-left: -50px;
+    }
+
+    .caption .title h2 {
+         font-size: 22px;
+        text-align: center;
+    }
+
+    .caption .title p {
+        text-align: center;
+        margin-top: -5px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .login-header {
+        margin: 0 10px 30px 10px;
+    }
+
+    .login-content {
+        margin: 0 10px;
+    }
+
+    .caption {
+        padding-top: 2px;
+    }
+
+    .caption .title {
+        margin-left: -50px;
+    }
+    .caption .title h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .caption .title p {
+        text-align: center;
+        margin-top: -5px;
+    }
+
+}
+
+/*** End Login ***/
+
+#feature{
+	padding: 80px 0px;
+}
+.feature-inner{
+	padding: 30px 10px ;
+}
+
+.feature-bg,.feature-bg.white{
+	-webkit-transition: all .2s ease 0s;
+	-o-transition: all .2s ease 0s;
+	transition: all .2s ease 0s;
+}
+.feature-bg{
+	background: #f7f7f7;
+}
+.feature-bg.white{
+	background: #f9f9f9;
+}
+.feature-bg:hover{
+	background: #00AEFF;
+}
+.feature-bg:hover .feature-content, .feature-bg:hover .feature-content p,.feature-bg:hover .read-more {
+	color: #fff;
+}
+.feature-bg:hover .feature-content h3{
+	border-color: #ddd;
+}
+.feature-bg:hover .read-more:before,.feature-bg:hover .read-more:after{
+	background: #fff;
+}
+.icon-box {
+	-webkit-transition: all .2s linear 0s;
+	-o-transition: all .2s linear 0s;
+	transition: all .2s linear 0s;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+
+.feature-content h3{
+	font-size: 16px;
+	font-weight: 600;
+	/*text-transform: capitalize;*/
+	text-transform: uppercase;
+	margin: 10px 0px;
+	position: relative;
+	padding-bottom: 10px;
+}
+.feature-content h3:after{
+	position: absolute;
+	content:"";
+	width: 50px;
+	height: 2px;
+	background: #444;
+	bottom: 0px;
+	left: 40%;
+}
+
+.feature-content p{
+	margin: 10px 0px 20px;
+	color: #444;
+	padding: 10px 10px;
+}
+.read-more{
+	text-transform: capitalize;
+	padding: 10px 20px;
+	position: relative;
+	border-radius: 20px;
+	border: 1px solid#00AEFF;
+	font-weight: 700;
+}
+.feature-content:hover .read-more{
+	border: 1px solid#fff;
+}
+.feature-content:hover h3:after{
+	background: #fff;
+}
+
+.feature-content:hover .icon-box {
+	color: #fff!important;
+}
+.permission.inline {
+    width: 250px;
+}
+
+#search {
+    float: right;
+    margin-top: 9px;
+    width: 250px;
+}
+
+.search {
+    padding: 5px 0;
+    width: 230px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    float: left;
+    line-height: 22px;
+}
+
+    .search input {
+        position: absolute;
+        width: 0px;
+        float: Left;
+        margin-left: 210px;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        height: 30px;
+        line-height: 18px;
+        padding: 0 2px 0 2px;
+        border-radius:1px;
+    }
+
+        .search:hover input, .search input:focus {
+            width: 200px;
+            margin-left: 0px;
+        }
+
+.search .btn {
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    border-radius:1px;
+}
+.box-title-mdf 
+{
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1;
+}
+

@@ -1,0 +1,52 @@
+
+<table id="example1" class="table table-bordered table-striped">
+    <thead>
+    <tr>
+    <th>No</th>
+    <th>NIM</th>
+    <th>Nama</th>
+            <th>1</th>
+        <th>Tugas Akhir</th>
+    <th>Nilai Akhir</th>
+    </tr>
+    </thead>
+    <tbody>
+                  
+            <tr>
+                <td>1</td>
+                <td>13517093</td>
+                <td>Faiz Muhammad Muflich</td>
+                                                            <td>0</td>
+                                                    <td>
+                                            0
+                                    </td>
+                <td>
+                                    </td>
+            </tr>
+          
+            <tr>
+                <td>2</td>
+                <td>13517096</td>
+                <td>Asif Hummam Rais</td>
+                                                            <td>0</td>
+                                                    <td>
+                                            0
+                                    </td>
+                <td>
+                                    </td>
+            </tr>
+          
+            <tr>
+                <td>3</td>
+                <td>13517120</td>
+                <td>Muhammad Hanif Adzkiya</td>
+                                                            <td>90</td>
+                                                    <td>
+                                            88                                    </td>
+                <td>
+                                    </td>
+            </tr>
+            </tbody>
+    <tfoot>
+    </tfoot>
+</table>

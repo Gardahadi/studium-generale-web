@@ -1,0 +1,21 @@
+stages :
+  - test
+  - deploy
+
+test_job :
+  stage : test
+  tags :
+    - test
+  script :
+    - echo "Testing Application"
+
+deploy_job :
+  stage : deploy
+  tags :
+    - deploy
+  script :
+    - cd /var/www/html/current
+    - sudo dep deploy:unlock --hosts localhost
+    - sudo dep deploy --hosts localhost
+  only :
+    - master
