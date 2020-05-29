@@ -17,5 +17,6 @@ deploy_job :
     - cd /var/www/html/current
     - sudo dep deploy:unlock --hosts localhost
     - sudo dep deploy --hosts localhost
+    - sudo chmod -R 777 upload/
   only :
     - master
