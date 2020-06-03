@@ -111,9 +111,11 @@ class Kelas extends CI_Controller {
         $id_kelas = $this->input->post('id-kelas');
         $id_semester = $this->input->post('id-semester');
         $this->load->model('kelas_model');
-        $this->kelas_model->delete($id_kelas);
-
-        redirect('/admin/kelas/all/  '.$id_semester);
+        $message = $this->kelas_model->delete($id_kelas);
+        if ($message != 'success') {
+          setAlertCookie('fail', $message);
+        }
+        redirect('/admin/kelas/all/'.$id_semester);
       } else {
         redirect('admin/login');
       }

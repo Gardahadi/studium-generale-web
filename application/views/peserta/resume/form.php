@@ -33,7 +33,7 @@
 							<div class="form-group">
 								<label for="noKelas" class="col-md-3 control-label">Resume<span style="color: red">*</span></label>
 								<div class="col-md-7">
-									<textarea required class="form-control" name="resume" rows="10" readonly><?php echo $resume->konten?></textarea>
+									<textarea required class="form-control" name="resume" rows="10" readonly><?php if($resume != null) echo $resume->konten?></textarea>
 								</div>
 							</div>
 						<?php } ?>

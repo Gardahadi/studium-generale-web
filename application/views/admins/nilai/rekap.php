@@ -14,8 +14,7 @@
             <?php } ?>
             <h3 class="box-title">Rekap Nilai</h3>
             <?php if($kelas != null) { ?>
-              <a href="<?=base_url().'admin/nilai/'. ((defined('PHP_MAJOR_VERSION') && PHP_MAJOR_VERSION > 5) ? 'excelphp7' : 'excel')               
-                  .'?kelas='.$kelas->id_kelas?>" class="btn btn-social btn-dropbox btn-sm pull-right">
+              <a href="<?=base_url().'admin/nilai/excel?kelas='.$kelas->id_kelas?>" class="btn btn-social btn-dropbox btn-sm pull-right">
                   <i class="fa fa-plus" href=""></i> Export
               </a>
             <?php } ?>
@@ -53,8 +52,7 @@
                             <div class="input-group-addon">
                                 <i class="fa fa-file"></i>
                             </div>
-                            <a class="form-control" href="<?=base_url().'admin/nilai/'.((defined('PHP_MAJOR_VERSION') && PHP_MAJOR_VERSION > 5) ? 'excelphp7' : 'excel')               
-                                  .'?kelas='.$kelas->id_kelas?>"> Download </a>
+                            <a class="form-control" href="<?=base_url().'admin/nilai/excel?kelas='.$kelas->id_kelas?>"> Download </a>
                         </div>
                     </div>
                 </div>

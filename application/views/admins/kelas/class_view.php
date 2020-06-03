@@ -19,17 +19,15 @@
                                     <tr>
                                         <th>NIM</th>
                                         <th>Nama</th>
-                                              <th>Status</th>
+                                        <th>Status</th>
                                     </tr>
-          <th>Nilai Akhir</th>
-                                                        </thead>
+                                </thead>
                                 
                                 <tbody>
                                     <?php foreach ($peserta as $detail_peserta): ?>
                                     <tr>
                                         <td><?php echo $detail_peserta['nim']; ?></td>
                                         <td><?php echo $detail_peserta['nama']; ?></td>
-                                        <td><?php echo $detail_peserta['nilai_akhir']; ?></td>
                                         <form action="<?=base_url().'admin/peserta/changestatus'?>" method="POST">
                                             <td>
                                                 <select class="form-control" name="status">

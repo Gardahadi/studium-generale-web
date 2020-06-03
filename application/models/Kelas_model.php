@@ -44,11 +44,20 @@ class Kelas_model extends CI_Model {
     $this->load->model('peserta_model');
 
     $daftar_peserta = $this->peserta_model->getByKelas($id_kelas);
-    foreach ($daftar_peserta as $peserta) {
-      $this->peserta_model->delete($peserta->nim);
+    if (count($daftar_peserta) > 0){
+      return 'Tidak dapat menghapus kelas yang masih memiliki peserta terdaftar';
     }
 
-    return $this->db->delete('Kelas', array('id_kelas' => $id_kelas));
+    $this->load->model('pertemuan_model');
+
+    $list_pertemuan = $this->pertemuan_model->getAllByKelas($id_kelas);
+    if (count($list_pertemuan)>0) {
+      return 'Tidak dapat menghapus kelas yang sudah memiliki pertemuan';
+    }
+
+    if ($this->db->delete('Kelas', array('id_kelas' => $id_kelas))){;
+      return 'success';
+    }
   }
 
   public function insert($nomor, $nama_dosen, $id_semester, $tipe_kelas) {
